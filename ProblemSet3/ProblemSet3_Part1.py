@@ -1,4 +1,11 @@
-#/*-PS3: Code Block 1--*/
+#-------------------------------------------------------------
+# Problem set 3 - PART I
+# Author: Ben Newman (ben.newman@duke.edu)
+# NetID:  bfn3
+# Date:   Fall 2020
+#--------------------------------------------------------------
+
+#/*-PS3: Task 1
 
 mountain = "Denali"
 nickname = 'Mt. McKinley'
@@ -15,29 +22,47 @@ dataList = ['roads.shp','road_types.dbf','naip_imagery.tif']
 
 userItem = "streams.shp"
 
+#Append userItem to the end of dataList
 dataList.append(userItem)
 
+#Use FOR loop to iterate over each object in dataList
 for state in dataList:
     print(dataFolder+'\\'+state)
     
 #%% Task3
 
+#Create an empty list
 userNumbers = []
-
+#Iterate 3 times using FOR loop and append real integer value to the empty list
 for random in range(3):
+    
     my_integer = input("Enter an integer")
+    
+    #Convert my_integer to a real_integer
     real_integer = int(my_integer)
+    
+     #Append to list
     userNumbers.append(real_integer)
+    
+#sort the list by ascending order
 userNumbers.sort()
 print(userNumbers[-1])
 
-#Task 3- Challenge
+#--------------------------------------------------------------
+#Task 3 (Challenge Question)
 
 userNumbers = []
 
+#Iterate 3 times using FOR loop and append real integer value to the empty list
 for random in range(3):
     my_integer = input("Enter an integer")
+    
+    #Convert my_integer to a real_integer
     real_integer = int(my_integer)
+    
+    #Append to list
     userNumbers.append(real_integer)
+    
+#Sort the list by descending order
 userNumbers.sort(reverse = True)
 print(userNumbers)
