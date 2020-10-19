@@ -25,7 +25,7 @@ userItem = "streams.shp"
 #Append userItem to the end of dataList
 dataList.append(userItem)
 
-#Use FOR loop to iterate over each object in dataList
+#Use the FOR loop to iterate over each object in dataList
 for state in dataList:
     print(dataFolder+'\\'+state)
     
@@ -33,6 +33,7 @@ for state in dataList:
 
 #Create an empty list
 userNumbers = []
+
 #Iterate 3 times using FOR loop and append real integer value to the empty list
 for random in range(3):
     
@@ -46,11 +47,14 @@ for random in range(3):
     
 #sort the list by ascending order
 userNumbers.sort()
+
+#Print the highest value 
 print(userNumbers[-1])
 
-#--------------------------------------------------------------
-#Task 3 (Challenge Question)
 
+#%% Task 3 (Challenge Question)
+
+#Create an empty list
 userNumbers = []
 
 #Iterate 3 times using FOR loop and append real integer value to the empty list
@@ -65,4 +69,6 @@ for random in range(3):
     
 #Sort the list by descending order
 userNumbers.sort(reverse = True)
+
+#Print numbers in descending order
 print(userNumbers)
