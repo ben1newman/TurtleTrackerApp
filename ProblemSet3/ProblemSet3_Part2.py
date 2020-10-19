@@ -95,5 +95,7 @@ for line in lineList:
     #To meet the longitude condition, start_lon must be more than 165 and less than 170
     if start_lat < 0 and end_lat > 0 and start_lon > 165 and start_lon < 170:  
         print (f"Vessel # {transhipment_mmsi} flies the flag of {vesselDict[transhipment_mmsi]}")
+    
+    #Print vessels that did not meet criteria
     else: 
         print("No vessels met criteria")
